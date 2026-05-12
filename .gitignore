@@ -2,7 +2,6 @@
 node_modules/
 altro/
 # File generati dalla compilazione SCSS
-my-style.css
-my-style.css.map
+
 
 # File di sistema e log
