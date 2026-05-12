@@ -1,0 +1,18 @@
+$primary: #ff5252;
+$progress-bg: white;
+$progress-height: 0.8rem;
+$carousel-control-opacity: 1;
+$carousel-control-hover-opacity: 1;
+$carousel-control-icon-filter: none;
+$carousel-dark-control-icon-filter: none; 
+$carousel-control-icon-width: 1.5rem;
+$carousel-control-icon-height: 1.5rem;
+$secondary-bg-subtle-dark:#191919;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; // Toglie lo spazio laterale di default del 15%
+}
+
