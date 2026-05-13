@@ -9,10 +9,90 @@ $carousel-control-icon-width: 1.5rem;
 $carousel-control-icon-height: 1.5rem;
 $secondary-bg-subtle-dark:#191919;
 
+$nav-link-color: #000;
+$nav-link-hover-color: #ff0000;
+$navbar-light-active-color: #ff0000; // Per lo stato .show / .active
+
+
+.dropdown-custom {
+    // Variabili per il bottone principale (il toggle)
+    .dropdown-toggle {
+      --bs-btn-color: #000;           // Testo nero
+      --bs-btn-bg: transparent;       // Sfondo trasparente
+      --bs-btn-border-color: transparent;
+  
+      // Stati Hover e Focus del bottone
+      --bs-btn-hover-color: #ff0000;  // Testo rosso in hover
+      --bs-btn-hover-bg: transparent;
+      --bs-btn-hover-border-color: transparent;
+  
+      // Stato quando il menu è APERTO (quello che ti faceva tribolare)
+      --bs-btn-active-color: #ff0000; // Testo rosso quando clicchi/apri
+      --bs-btn-active-bg: transparent;
+      --bs-btn-active-border-color: transparent;
+      
+      // Rimuove l'alone azzurro di Bootstrap al click
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .nav {
+        a {
+          // Assegniamo le variabili di Bootstrap ai tuoi tag <a> nudi
+          color: $nav-link-color;
+          text-decoration: none;
+      
+          &:hover, &:focus {
+            color: $nav-link-hover-color;
+          }
+      
+          // Questa è la parte per il CV che diventava bianco
+          &.show {
+            color: $nav-link-hover-color; 
+          }
+        }
+      }
+    // Variabili per il menu che scende
+    .dropdown-menu {
+      --bs-dropdown-bg: #ffffff;          // Sfondo menu bianco
+      --bs-dropdown-link-color: #000;     // Scritte nere
+      --bs-dropdown-link-hover-color: #ff0000; // Scritte rosse in hover
+      --bs-dropdown-link-hover-bg: transparent; // Niente sfondo grigio in hover
+      --bs-dropdown-link-active-color: #ff0000; // Testo rosso se selezionato
+      --bs-dropdown-link-active-bg: transparent; // Niente sfondo blu se selezionato
+    }
+  }
+
+  .navlink-custom{
+    // 1. Stato Normale: Testo nero e pulito
+    color: #000;
+    text-decoration: none;      // Rimuove la sottolineatura del browser
+    background-color: transparent;
+    display: inline-block;      // Utile per gestire meglio i margini se serve
+    
+    // 2. Transizione fluida (opzionale, per un tocco pro)
+    transition: color 0.2s ease-in-out;
+
+    // 3. Hover e Focus: Diventa rosso
+    &:hover, 
+    &:focus {
+        color: #ff0000;         // Il tuo rosso
+        text-decoration: none;  // Impedisce al Reboot di rimettere la linea sotto
+        outline: none;          // Toglie il bordo di selezione brutto dei browser
+    }
+
+    // 4. Stato "Attivo" (quando clicchi o se la pagina è quella corrente)
+    &:active,
+    &.active {
+        color: #ff0000;
+        text-decoration: none;
+    }
+}
 @import "node_modules/bootstrap/scss/bootstrap";
 
 .carousel-control-prev,
 .carousel-control-next {
     width: auto; // Toglie lo spazio laterale di default del 15%
 }
+
 

@@ -1,4 +1,54 @@
 @charset "UTF-8";
+.dropdown-custom .dropdown-toggle {
+  --bs-btn-color: #000;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #ff0000;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-color: #ff0000;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+}
+.dropdown-custom .dropdown-toggle:focus {
+  box-shadow: none;
+}
+.dropdown-custom .nav a {
+  color: #000;
+  text-decoration: none;
+}
+.dropdown-custom .nav a:hover, .dropdown-custom .nav a:focus {
+  color: #ff0000;
+}
+.dropdown-custom .nav a.show {
+  color: #ff0000;
+}
+.dropdown-custom .dropdown-menu {
+  --bs-dropdown-bg: #ffffff;
+  --bs-dropdown-link-color: #000;
+  --bs-dropdown-link-hover-color: #ff0000;
+  --bs-dropdown-link-hover-bg: transparent;
+  --bs-dropdown-link-active-color: #ff0000;
+  --bs-dropdown-link-active-bg: transparent;
+}
+
+.navlink-custom {
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  display: inline-block;
+  transition: color 0.2s ease-in-out;
+}
+.navlink-custom:hover, .navlink-custom:focus {
+  color: #ff0000;
+  text-decoration: none;
+  outline: none;
+}
+.navlink-custom:active, .navlink-custom.active {
+  color: #ff0000;
+  text-decoration: none;
+}
+
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -3777,8 +3827,8 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
-  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-color: #000;
+  --bs-nav-link-hover-color: #ff0000;
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
   flex-wrap: wrap;
@@ -3914,12 +3964,12 @@ textarea.form-control-lg {
   --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
   --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
-  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-active-color: #ff0000;
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
-  --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-color: #ff0000;
+  --bs-navbar-brand-hover-color: #ff0000;
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
