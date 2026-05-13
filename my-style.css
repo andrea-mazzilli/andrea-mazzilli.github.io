@@ -14,7 +14,7 @@
   box-shadow: none;
 }
 .dropdown-custom .nav a {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 .dropdown-custom .nav a:hover, .dropdown-custom .nav a:focus {
@@ -200,7 +200,7 @@
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: rgb(51, 16.4, 16.4);
-  --bs-secondary-bg-subtle: #191919;
+  --bs-secondary-bg-subtle: #0d0a0a;
   --bs-success-bg-subtle: rgb(5, 27, 16.8);
   --bs-info-bg-subtle: rgb(2.6, 40.4, 48);
   --bs-warning-bg-subtle: rgb(51, 38.6, 1.4);
@@ -3827,7 +3827,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: #000;
+  --bs-nav-link-color: #000000;
   --bs-nav-link-hover-color: #ff0000;
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
@@ -4966,7 +4966,7 @@ textarea.form-control-lg {
 .progress-stacked {
   --bs-progress-height: 0.8rem;
   --bs-progress-font-size: 0.75rem;
-  --bs-progress-bg: white;
+  --bs-progress-bg: #ffffff;
   --bs-progress-border-radius: var(--bs-border-radius);
   --bs-progress-box-shadow: var(--bs-box-shadow-inset);
   --bs-progress-bar-color: #fff;
@@ -12032,4 +12032,135 @@ textarea.form-control-lg {
 .carousel-control-prev,
 .carousel-control-next {
   width: auto;
+}
+
+.footer-column-text * {
+  color: #000000;
+  text-decoration: none;
+}
+.footer-column-text * a:hover, .footer-column-text * span:hover {
+  color: #ff0000;
+  text-decoration: none;
+  outline: none;
+}
+
+.footer-logo-text {
+  color: #000000;
+  text-decoration: none;
+  display: grid;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  line-height: 0.85;
+  font-size: 2.5rem;
+}
+
+.home-logo-text {
+  display: grid;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  line-height: 0.95;
+  font-size: 1.5rem;
+}
+
+.footer-logo {
+  height: 4.5rem;
+}
+
+.name-red {
+  color: #ff1818;
+}
+
+.name-black {
+  color: #000000;
+}
+
+.name-black {
+  color: #000000;
+}
+
+.name-gray {
+  color: #5d5d5d;
+}
+
+.gap-nav {
+  gap: 2.5rem;
+}
+
+body {
+  margin: 0;
+  /* background: var(--portfolio-white);
+  color: var(--portfolio-black); */
+  line-height: 1.5;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+h1, .h1, .h1 h2, .h1 .h2,
+.h2 h3,
+.h2 .h3,
+.h3 h4,
+.h4 {
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Definiamo i tuoi font esatti in modo fluido */
+.display-hero {
+  /* Da 40px (mobile) a 72px (desktop) */
+  font-size: clamp(2.5rem, 1.76rem + 3.04vw, 4.5rem);
+}
+
+h1, .h1 {
+  /* Da 32px (mobile) a 56px (desktop) */
+  font-size: clamp(2rem, 1.44rem + 2.28vw, 3.5rem);
+}
+
+h2, .h2 {
+  /* Da 24px (mobile) a 40px (desktop) */
+  font-size: clamp(1.5rem, 1.13rem + 1.52vw, 2.5rem);
+}
+
+h3, .h3 {
+  /* Da 20px (mobile) a 32px (desktop) */
+  font-size: clamp(1.25rem, 0.97rem + 1.14vw, 2rem);
+}
+
+h4, .h4 {
+  /* Da 18px (mobile) a 24px (desktop) */
+  font-size: clamp(1.125rem, 0.98rem + 0.57vw, 1.5rem);
+}
+
+body, p {
+  /* Da 16px (mobile) a 18px (desktop) */
+  font-size: clamp(1rem, 0.95rem + 0.19vw, 1.125rem);
+}
+
+small, .small, .caption {
+  /* Da 13px (mobile) a 14px (desktop) */
+  font-size: clamp(0.8125rem, 0.79rem + 0.09vw, 0.875rem);
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.19vw, 1.125rem);
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--portfolio-coral);
+}
+
+.tag {
+  color: var(--portfolio-cotton-candy);
+}
+
+.red {
+  color: var(--portfolio-coral);
+}
+
+.skill-icons {
+  height: 2rem;
 }/*# sourceMappingURL=my-style.css.map */

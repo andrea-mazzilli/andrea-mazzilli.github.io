@@ -35,7 +35,7 @@ h3,
 h4 {
   font-family: "Funnel Display", sans-serif;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 /* Definiamo i tuoi font esatti in modo fluido */
@@ -96,9 +96,6 @@ small, .caption {
   height: 2rem;
 }
 
-.container-xxl {
-  max-width: var(--content-max);
-}
 
 .top-header {
   background: var(--portfolio-white);
@@ -445,15 +442,14 @@ small, .caption {
 
 .home-header {
   background: #fff;
-  border-radius: 0 0 20px 20px;
-  margin: 0 12px;
+  
   position: sticky;
   top: 0;
   z-index: 1040;
 }
 
 .home-header-inner {
-  min-height: 74px;
+  /* min-height: 74px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -465,26 +461,6 @@ small, .caption {
   align-items: center;
   gap: 0.3rem;
   text-decoration: none;
-}
-
-.home-logo-text {
-  display: grid;
-  font-family: "Funnel Display", sans-serif;
-  font-weight: 500;
-  line-height: 0.95;
-  font-size: 1.5rem;
-}
-
-.home-logo-text .name-red {
-  color: #ff1818;
-}
-
-.home-logo-text .name-black {
-  color: #000;
-}
-
-.gap-nav {
-  gap: 2.5rem;
 }
 
 .home-nav a {

@@ -1,5 +1,15 @@
-$primary: #ff5252;
-$progress-bg: white;
+$portfolio-black: #000000;
+$portfolio-surface: #0d0a0a;
+$portfolio-white: #ffffff;
+$portfolio-coral: #ff5252;
+$portfolio-cotton-candy: #ffa0a0;
+$portfolio-red: #ff1818;
+$portfolio-darker-red: #db0000;
+$radius-card: 20px;
+$content-max: 1200px;
+
+$primary: $portfolio-coral;
+$progress-bg: $portfolio-white;
 $progress-height: 0.8rem;
 $carousel-control-opacity: 1;
 $carousel-control-hover-opacity: 1;
@@ -7,9 +17,9 @@ $carousel-control-icon-filter: none;
 $carousel-dark-control-icon-filter: none; 
 $carousel-control-icon-width: 1.5rem;
 $carousel-control-icon-height: 1.5rem;
-$secondary-bg-subtle-dark:#191919;
+$secondary-bg-subtle-dark: $portfolio-surface;
 
-$nav-link-color: #000;
+$nav-link-color: $portfolio-black;
 $nav-link-hover-color: #ff0000;
 $navbar-light-active-color: #ff0000; // Per lo stato .show / .active
 
@@ -94,5 +104,141 @@ $navbar-light-active-color: #ff0000; // Per lo stato .show / .active
 .carousel-control-next {
     width: auto; // Toglie lo spazio laterale di default del 15%
 }
+.footer-column-text {
+  // Questo colpisce TUTTI gli elementi annidati, a qualunque profondità
+  * {
+    color: $portfolio-black;
+    text-decoration: none;
+    
+  }
+  *a:hover, *span:hover{
+    color: #ff0000;         // Il tuo rosso
+  text-decoration: none;  // Impedisce al Reboot di rimettere la linea sotto
+  outline: none; 
+  }
+}
+
+.footer-logo-text{
+  color: $portfolio-black;
+  text-decoration: none;
+  display: grid;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  line-height: 0.85;
+  font-size: 2.5rem;
+}
+
+.home-logo-text {
+  display: grid;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  line-height: 0.95;
+  font-size: 1.5rem;
+
+}
+
+.footer-logo{
+  height: 4.5rem;
+}
+
+.name-red {
+  color: $portfolio-red;
+}
+
+.name-black {
+  color: $portfolio-black;
+}
+
+.name-black {
+  color: $portfolio-black;
+}
+
+.name-gray {
+  color: #5d5d5d;
+}
+
+.gap-nav {
+  gap: 2.5rem;
+}
 
 
+
+
+
+body {
+  margin: 0;
+  /* background: var(--portfolio-white);
+  color: var(--portfolio-black); */
+  line-height: 1.5;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+h1, .h1
+h2, .h2
+h3, .h3
+h4, .h4 {
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Definiamo i tuoi font esatti in modo fluido */
+
+.display-hero {
+  /* Da 40px (mobile) a 72px (desktop) */
+  font-size: clamp(2.5rem, 1.76rem + 3.04vw, 4.5rem);
+}
+
+h1, .h1 {
+  /* Da 32px (mobile) a 56px (desktop) */
+  font-size: clamp(2rem, 1.44rem + 2.28vw, 3.5rem);
+}
+
+h2, .h2 {
+  /* Da 24px (mobile) a 40px (desktop) */
+  font-size: clamp(1.5rem, 1.13rem + 1.52vw, 2.5rem);
+}
+
+h3, .h3 {
+  /* Da 20px (mobile) a 32px (desktop) */
+  font-size: clamp(1.25rem, 0.97rem + 1.14vw, 2rem);
+}
+
+h4, .h4 {
+  /* Da 18px (mobile) a 24px (desktop) */
+  font-size: clamp(1.125rem, 0.98rem + 0.57vw, 1.5rem);
+}
+
+body, p {
+  /* Da 16px (mobile) a 18px (desktop) */
+  font-size: clamp(1rem, 0.95rem + 0.19vw, 1.125rem);
+}
+
+small, .caption {
+  /* Da 13px (mobile) a 14px (desktop) */
+  font-size: clamp(0.8125rem, 0.79rem + 0.09vw, 0.875rem);
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.19vw, 1.125rem);
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--portfolio-coral);
+}
+
+.tag {
+  color: var(--portfolio-cotton-candy);
+}
+.red {
+  color: var(--portfolio-coral);
+}
+
+.skill-icons{
+  height: 2rem;
+}

@@ -14,18 +14,21 @@
 <body class="portfolio-home">
   
 
-  <header class="home-header">
-    <div class="container-xxl home-header-inner">
-      <a href="#top" class="home-logo" aria-label="Andrea Mazzilli home">
-        <img src="img/logo.svg" class="img-fluid" alt="Responsive image">
-        <span class="home-logo-text">
-          <span class="name-red">Andrea</span>
-          <span class="name-black">Mazzilli</span>
-        </span>
-      </a>
+  <header class="container-fluid bg-white" data-bs-theme="light">
+    <div class="container-xxl py-2">
+      <div class="row justify-content-between  align-items-center">
+        <div class="col-auto d-flex align-items-center">
+          <a href="#top" class="d-inline-flex align-items-center text-decoration-none" aria-label="Andrea Mazzilli home">
+          <img src="img/logo.svg" class="img-fluid" alt="Responsive image">
+          <span class="home-logo-text ps-1">
+            <span class="name-red">Andrea</span>
+            <span class="name-black pb-0">Mazzilli</span>
+          </span>
+        </a>
+      </div>
       
              
-        <ul class="nav align-items-center gap-nav">
+        <ul class="nav align-items-center gap-nav col-auto">
           <li class="nav-link"><a class="navlink-custom" href="#about">About</a></li>
           <li class="nav-link"><a class="navlink-custom" href="#about">Progetti</a></li>
           <li class="nav-link"><a class="navlink-custom" href="#about">Contatti</a></li>                  
@@ -34,7 +37,7 @@
                  data-bs-toggle="dropdown" aria-expanded="false">
                   CV
               </a>
-              <ul class="dropdown-menu pos">
+              <ul class="dropdown-menu">
                   <li>
                       <a href="https://drive.google.com/file/d/1e8N39CHURBRTO3f0-Zn99fezC7ZnYE9a/view?usp=sharing" class="dropdown-item" asp-controller="Administration"
                          asp-action="ListUsers">Italiano</a>
@@ -50,27 +53,32 @@
       
       <button class="btn btn-outline-primary d-md-none" aria-label="Apri menu">☰</button>
     </div>
+    </div>
   </header>
 
   <main id="top">
-    <section id="about" class="home-hero">
+    <section id="about-me" class="py-5 my-5">
       <div class="container-xxl">
-        <div class="home-hero-grid">
-          <div class="home-hero-image" aria-label="Profile visual placeholder"></div>
-          <div class="home-hero-copy">
-            <h1>Ciao, sono Andrea</h1>
+        <div class="row align-items-center justify-content-center gap-3">
+          <div class="col-3">
+            <img src="img/foto.JPG" class="img-fluid rounded-4" alt="">
+          </div>
+          <div class="col-5">
+            <h1 class="visually-hidden">Ciao, sono Andrea</h1>
+            <span class="h1">Ciao, sono Andrea</span>
             <p>Sono un UI/UX designer e front-end developer con focus su interfacce digitali intuitive, prototipazione e sviluppo orientato all'esperienza utente.</p>
             <a class="btn btn-outline-primary rounded-pill text-white" href="#projects">Altre info su di me →</a>
           </div>
         </div>
+        
       </div>
     </section>
 
     
 
-    <section id="projects" class="home-projects">
+    <section id="projects" class="py-5 mb-5">
       <div class="container-xxl">
-        <h2>Progetti</h2>
+        <h2 class="mb-4">Progetti</h2>
 
 
         <div id="Freeme" class="carousel slide mb-5">
@@ -955,37 +963,62 @@
       </div>
     </section>
   </main>
-
-  <footer id="footer-contact" class="home-footer">
-    <div class="container-xxl footer-grid">
-      <div class="footer-logo-wrap">
-        <a href="#top" class="home-logo" aria-label="Andrea Mazzilli home footer">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-            <path d="M0 0L12.12 24L24 17.92L19.6044 8.96L15.12 0H0Z" fill="#A0A0A0"/>
-            <path d="M48 48L35.88 24L24 30.08L28.3956 39.04L32.88 48H48Z" fill="#A0A0A0"/>
-            <path d="M24 41.3099L28.3956 39.04L24 30.08L19.5156 39.04L24 41.3099Z" fill="#C7C7C7"/>
-            <path d="M0 0L15.12 0L19.6044 8.96L24 17.92L19.5156 8.96L24 0L48 0L32.88 0L28.3956 8.96L24 17.92L12.12 24L0 0Z" fill="#ffffff"/>
-          </svg>
-          <span class="home-logo-text footer-logo-text">
-            <span>Andrea</span>
-            <span>Mazzilli</span>
+  <footer class="container-fluid bg-white py-5" data-bs-theme="light">
+    <div class="container-xxl py-2">
+      <div class="row justify-content-between  align-items-start px-5">
+        <div class="col d-flex align-items-center pt-1">
+          <a href="#top" class="d-inline-flex align-items-center text-decoration-none" aria-label="Andrea Mazzilli home">
+          <img src="img/logo-bw.svg" class=" footer-logo w-auto" alt="Responsive image">
+          <span class="footer-logo-text ps-1">
+            <span class="name-gray">Andrea</span>
+            <span class="name-black pb-0">Mazzilli</span>
           </span>
         </a>
       </div>
-      <div class="footer-links">
-        <h4>Pagine</h4>
-        <a href="#about">About</a>
-        <a href="#projects">Progetti</a>
-        <a href="#footer-contact">Contatti</a>
-      </div>
-      <div class="footer-links">
-        <h4>Let's connect</h4>
-        <a href="mailto:andreamazzilli09@gmail.com">andreamazzilli09@gmail.com</a>
-        <a href="#">CV</a>
+      
+             
+        <div class="col footer-column-text">
+          <div class="row">
+            <div class="col d-flex flex-column gap-2">
+              <h4 class="mb-2">Pagine</h4>
+              <span class="ps-1">About</span>
+              <span class="ps-1">Progetti</span>
+              <a class="ps-1" href="">- Freeme</a>
+              <a class="ps-1" href="">- Terra C-137</a>
+              <a class="ps-1" href="">- Prep-à-porter</a>
+              <a class="ps-1" href="">- Varmblixt</a>
+            </div>
+            <div class="col d-flex flex-column gap-2">
+              <h4 class="mb-2">Let's connect</h4>
+              <a class="ps-1" href="mailto:andrea.mazzilli1998@gmail.com">andrea.mazzilli1998@gmail.com</a>
+              <a class="ps-1" href="tel:+393923905655">+39 3923905655</a>
+              <a class="ps-1" href="https://www.linkedin.com/in/andrea-mazzilli-am/">Profilo Linkedin &#129109;</a>
+              <span class="nav-link dropdown dropdown-custom ps-1">
+                <a class="nav-link dropdown-toggle p-0"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    CV
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="https://drive.google.com/file/d/1e8N39CHURBRTO3f0-Zn99fezC7ZnYE9a/view?usp=sharing" class="dropdown-item" asp-controller="Administration"
+                           asp-action="ListUsers">Italiano</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/10YRYjS2k1e-nWhEbr-TLQ0wcAbnzelss/view?usp=sharing" class="dropdown-item" asp-controller="Administration"
+                           asp-action="ListRoles">English</a>
+                    </li>
+                </ul>
+            </li>
+            </div>
+          </div>
+        </div>
+        
+      
       </div>
     </div>
   </footer>
+  
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
