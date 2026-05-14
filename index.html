@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andrea Mazzilli Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="my-style.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+ -->  <link rel="stylesheet" href="my-style.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
   
 </head>
 <body class="portfolio-home">
@@ -28,7 +28,7 @@
       </div>
       
              
-        <ul class="nav align-items-center gap-nav col-auto">
+        <ul class="nav align-items-center gap-nav col-auto d-none d-md-flex">
           <li class="nav-link"><a class="navlink-custom" href="#about">About</a></li>
           <li class="nav-link"><a class="navlink-custom" href="#about">Progetti</a></li>
           <li class="nav-link"><a class="navlink-custom" href="#about">Contatti</a></li>                  
@@ -51,19 +51,19 @@
       </ul>
         
       
-      <button class="btn btn-outline-primary d-md-none" aria-label="Apri menu">☰</button>
+      <button class="col-auto btn btn-outline-primary rounded-circle d-md-none" aria-label="Apri menu">☰</button>
     </div>
     </div>
   </header>
 
   <main id="top">
-    <section id="about-me" class="py-5 my-5">
+    <section id="about-me" class="py-5 my-5 px-5 px-md-0">
       <div class="container-xxl">
         <div class="row align-items-center justify-content-center gap-3">
-          <div class="col-3">
+          <div class="col-md-5 col-lg-3">
             <img src="img/foto.JPG" class="img-fluid rounded-4" alt="">
           </div>
-          <div class="col-5">
+          <div class="col-md-5 col-lg-5">
             <h1 class="visually-hidden">Ciao, sono Andrea</h1>
             <span class="h1">Ciao, sono Andrea</span>
             <p>Sono un UI/UX designer e front-end developer con focus su interfacce digitali intuitive, prototipazione e sviluppo orientato all'esperienza utente.</p>
@@ -80,8 +80,8 @@
       <div class="container-xxl">
         <h2 class="mb-4">Progetti</h2>
 
-
-        <div id="Freeme" class="carousel slide mb-5">
+        <div class="row pt-3">
+        <div id="Freeme" class="carousel slide project">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row align-items-center mx-5">
@@ -958,7 +958,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
+      </div>
 
       </div>
     </section>

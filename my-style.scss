@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+// 2. Sovrascrivi le variabili di Bootstrap
+$headings-font-family: "Funnel Display", sans-serif;
+$headings-font-weight: 500; // Usando il tuo rosso #ff5252
+$headings-line-height: 1.5;
+
 $portfolio-black: #000000;
 $portfolio-surface: #0d0a0a;
 $portfolio-white: #ffffff;
@@ -8,6 +14,7 @@ $portfolio-darker-red: #db0000;
 $radius-card: 20px;
 $content-max: 1200px;
 
+$body-bg-dark: $portfolio-black;
 $primary: $portfolio-coral;
 $progress-bg: $portfolio-white;
 $progress-height: 0.8rem;
@@ -22,7 +29,7 @@ $secondary-bg-subtle-dark: $portfolio-surface;
 $nav-link-color: $portfolio-black;
 $nav-link-hover-color: #ff0000;
 $navbar-light-active-color: #ff0000; // Per lo stato .show / .active
-
+@import "node_modules/bootstrap/scss/bootstrap";
 
 .dropdown-custom {
     // Variabili per il bottone principale (il toggle)
@@ -229,16 +236,21 @@ small, .caption {
   font-weight: 600;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--portfolio-coral);
+  color: $portfolio-coral;
 }
 
 .tag {
-  color: var(--portfolio-cotton-candy);
+  color: $portfolio-cotton-candy;
 }
 .red {
-  color: var(--portfolio-coral);
+  color: $portfolio-coral;
 }
 
 .skill-icons{
   height: 2rem;
 }
+
+.project{
+  margin-bottom: 6rem;
+}
+
