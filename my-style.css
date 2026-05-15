@@ -24162,5 +24162,5 @@ small, .small, .caption {
 }
 
 .project {
-  margin-bottom: 6rem;
+  margin-bottom: clamp(1.5rem, 8vw, 6rem);
 }/*# sourceMappingURL=my-style.css.map */
