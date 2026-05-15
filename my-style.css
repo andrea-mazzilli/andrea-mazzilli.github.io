@@ -151,7 +151,7 @@
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: rgb(51, 16.4, 16.4);
-  --bs-secondary-bg-subtle: #0d0a0a;
+  --bs-secondary-bg-subtle: #151313;
   --bs-success-bg-subtle: rgb(5, 27, 16.8);
   --bs-info-bg-subtle: rgb(2.6, 40.4, 48);
   --bs-warning-bg-subtle: rgb(51, 38.6, 1.4);
@@ -11990,6 +11990,10 @@ textarea.form-control-lg {
   border-left: none;
 }
 
+.icons-limit {
+  max-height: 1.8rem;
+}
+
 .dropdown-custom .dropdown-toggle {
   --bs-btn-color: #000;
   --bs-btn-bg: transparent;
@@ -12191,7 +12195,7 @@ textarea.form-control-lg {
   --bs-light-text-emphasis: #f8f9fa;
   --bs-dark-text-emphasis: #dee2e6;
   --bs-primary-bg-subtle: rgb(51, 16.4, 16.4);
-  --bs-secondary-bg-subtle: #0d0a0a;
+  --bs-secondary-bg-subtle: #151313;
   --bs-success-bg-subtle: rgb(5, 27, 16.8);
   --bs-info-bg-subtle: rgb(2.6, 40.4, 48);
   --bs-warning-bg-subtle: rgb(51, 38.6, 1.4);
