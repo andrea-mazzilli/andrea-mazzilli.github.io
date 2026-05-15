@@ -51,11 +51,32 @@
       </ul>
         
       
-      <button class="col-auto btn btn-outline-primary rounded-circle d-md-none" aria-label="Apri menuu">☰</button>
+      <button class="col-auto btn btn-outline-primary rounded-circle d-md-none fw-bold" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
     </div>
+    </div>
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-body">
+        <div class="navbar-nav col d-flex flex-column p-3 gap-3">
+          <a class="navlink-custom" href="#about">About</a>
+          <a class="navlink-custom" href="#about">Progetti</a>
+          <a class="navlink-custom" href="#about">Contatti</a>
+          <div class="col d-flex flex-column">
+            <a class="navlink-custom dropdown-toggle" onclick="toggleLingua()" href="javascript:void(0)">CV </a>
+            <div id="toggleCV" class="col d-flex flex-column ps-2 d-none">
+              <a href="https://drive.google.com/file/d/1e8N39CHURBRTO3f0-Zn99fezC7ZnYE9a/view?usp=sharing" class="navlink-custom ps-4" asp-controller="Administration"
+            asp-action="ListUsers">-Italiano</a>
+             <a href="https://drive.google.com/file/d/10YRYjS2k1e-nWhEbr-TLQ0wcAbnzelss/view?usp=sharing" class="navlink-custom ps-4" asp-controller="Administration"
+            asp-action="ListRoles">-English</a>
+            </div>
+             
+            </div>
+          
+          </div>
+        </div>
+      </div>
     </div>
   </header>
-
+  
   <main id="top">
     <section id="about-me" class="py-5 my-5 px-3 px-md-0">
       <div class="container-xxl">
@@ -1071,5 +1092,6 @@
   
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/my-js.js"></script>
 </body>
 </html>
