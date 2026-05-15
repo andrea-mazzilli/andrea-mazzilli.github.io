@@ -33,6 +33,17 @@ $nav-link-hover-color: #ff0000;
 $navbar-light-active-color: #ff0000; // Per lo stato .show / .active
 @import "node_modules/bootstrap/scss/bootstrap";
 
+.offcanvas-fit {
+  width: fit-content !important; 
+  min-width: 200px; // Opzionale: evita che sia troppo stretto se c'è poco testo
+  
+  // Se lo vuoi "staccato" dal bordo per un look più moderno
+  &.offcanvas-end {
+      border-left: none; 
+  }
+}
+
+
 .dropdown-custom {
     // Variabili per il bottone principale (il toggle)
     .dropdown-toggle {

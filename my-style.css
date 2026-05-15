@@ -11981,6 +11981,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.offcanvas-fit {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  min-width: 200px;
+}
+.offcanvas-fit.offcanvas-end {
+  border-left: none;
+}
+
 .dropdown-custom .dropdown-toggle {
   --bs-btn-color: #000;
   --bs-btn-bg: transparent;
