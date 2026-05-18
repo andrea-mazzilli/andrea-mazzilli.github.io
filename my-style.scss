@@ -266,6 +266,16 @@ small, .caption {
   height: 2rem;
 }
 
+.toolkit-icons{
+  height: 2rem;
+  max-height: 40px;
+}
+.cp {
+  // Cambia lo spazio tra le colonne (es. 40px totali: 20px a dx e 20px a sx)
+ margin-right: 2vw; 
+}
+
+
 .project{
   margin-bottom: clamp(1.5rem, 8vw, 6rem);
 }

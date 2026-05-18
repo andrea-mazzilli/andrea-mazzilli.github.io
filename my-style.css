@@ -24161,6 +24161,15 @@ small, .small, .caption {
   height: 2rem;
 }
 
+.toolkit-icons {
+  height: 2rem;
+  max-height: 40px;
+}
+
+.cp {
+  margin-right: 2vw;
+}
+
 .project {
   margin-bottom: clamp(1.5rem, 8vw, 6rem);
 }/*# sourceMappingURL=my-style.css.map */
