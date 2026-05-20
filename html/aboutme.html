@@ -1,0 +1,627 @@
+
+<!doctype html>
+<html lang="it" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me — Andrea Mazzilli</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="../my-style.css">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body class="portfolio-home">
+
+  <!-- HEADER -->
+  <header class="container-fluid bg-white" data-bs-theme="light">
+    <div class="container-xxl py-2">
+      <div class="row justify-content-between align-items-center">
+
+        <div class="col-auto d-flex align-items-center">
+          <a href="../index.html" class="d-inline-flex align-items-center text-decoration-none" aria-label="Andrea Mazzilli home">
+            <img src="../img/logo.svg" class="img-fluid" alt="Andrea Mazzilli logo">
+
+            <span class="home-logo-text ps-1">
+              <span class="name-red">Andrea</span>
+              <span class="name-black pb-0">Mazzilli</span>
+            </span>
+          </a>
+        </div>
+
+        <ul class="nav align-items-center gap-nav col-auto d-none d-md-flex">
+          <li class="nav-link">
+            <a class="navlink-custom active" href="about.html">About</a>
+          </li>
+
+          <li class="nav-link">
+            <a class="navlink-custom" href="../index.html#about">Progetti</a>
+          </li>
+
+          <li class="nav-link">
+            <a class="navlink-custom" href="../index.html#contact">Contatti</a>
+          </li>
+
+          <li class="nav-link dropdown dropdown-custom">
+            <a class="nav-link dropdown-toggle p-0"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+              CV
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="https://drive.google.com/file/d/1e8N39CHURBRTO3f0-Zn99fezC7ZnYE9a/view?usp=sharing"
+                   class="dropdown-item">
+                  Italiano
+                </a>
+              </li>
+
+              <li>
+                <a href="https://drive.google.com/file/d/10YRYjS2k1e-nWhEbr-TLQ0wcAbnzelss/view?usp=sharing"
+                   class="dropdown-item">
+                  English
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="col-auto btn btn-outline-primary rounded-circle d-md-none fw-bold"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="offcanvas offcanvas-end offcanvas-fit"
+         data-bs-scroll="true"
+         tabindex="-1"
+         id="offcanvasWithBothOptions">
+
+      <button type="button"
+              class="btn-close position-absolute p-4 end-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close">
+      </button>
+
+      <div class="offcanvas-body p-0">
+        <div class="navbar-nav col d-flex flex-column p-4 gap-3">
+
+          <a class="navlink-custom" href="about.html">About</a>
+          <a class="navlink-custom" href="../index.html#about">Progetti</a>
+          <a class="navlink-custom" href="../index.html#contact">Contatti</a>
+
+          <div class="col d-flex flex-column gap-2">
+            <a class="navlink-custom dropdown-toggle"
+               onclick="toggleLingua()"
+               href="javascript:void(0)">
+              CV
+            </a>
+
+            <div id="toggleCV" class="col d-flex flex-column ps-2 d-none">
+              <a href="https://drive.google.com/file/d/1e8N39CHURBRTO3f0-Zn99fezC7ZnYE9a/view?usp=sharing"
+                 class="navlink-custom ps-4">
+                - Italiano
+              </a>
+
+              <a href="https://drive.google.com/file/d/10YRYjS2k1e-nWhEbr-TLQ0wcAbnzelss/view?usp=sharing"
+                 class="navlink-custom ps-4">
+                - English
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="container-xxl py-5 py-lg-6">
+      <div class="row g-5 align-items-start">
+
+        <div class="col-12 col-lg-6">
+          <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-3">
+            About me
+          </span>
+
+          <h1 class="display-3 fw-bold lh-sm mb-0">
+            Costruisco esperienze digitali che funzionano per le persone,
+            non nonostante loro.
+          </h1>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="d-flex flex-column gap-4 fs-5 text-body-secondary">
+
+            <p class="mb-0">
+              Ho una triennale in Informatica e una magistrale in Teoria e Tecnologia della Comunicazione.
+              Un percorso che all'inizio sembra un cambio di rotta, ma che è sempre stato lo stesso viaggio:
+              capire come funzionano le cose <em>sotto</em>, e renderle comprensibili <em>sopra</em>.
+            </p>
+
+            <p class="mb-0">
+              Durante la magistrale mi sono confrontato con UX research, interaction design,
+              accessibilità, sviluppo frontend e realtà virtuale — spesso nello stesso progetto,
+              sempre in team.
+            </p>
+
+            <p class="mb-0">
+              Ho imparato che le soluzioni migliori nascono quando chi progetta l'interfaccia
+              e chi la costruisce ragionano insieme fin dall'inizio.
+            </p>
+
+            <p class="mb-0">
+              Non mi definisco solo designer né solo sviluppatore.
+              Mi interessa lo spazio nel mezzo — quello in cui le scelte visive hanno
+              conseguenze tecniche e quelle tecniche hanno conseguenze sull'esperienza.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="container-xxl py-5 border-top border-secondary-subtle">
+
+      <div class="row mb-5">
+        <div class="col-12 col-lg-6">
+          <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-3">
+            Competenze
+          </span>
+
+          <h2 class="display-5 fw-bold mb-0">
+            Design, frontend e ricerca.
+          </h2>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+          <div class="border border-secondary-subtle rounded-4 p-4 h-100">
+
+            <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-4">
+              UX / UI Design
+            </span>
+
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill text-bg-dark">User Research</span>
+              <span class="badge rounded-pill text-bg-dark">Wireframing</span>
+              <span class="badge rounded-pill text-bg-dark">Prototipazione</span>
+              <span class="badge rounded-pill text-bg-dark">User Testing</span>
+              <span class="badge rounded-pill text-bg-dark">Usabilità</span>
+              <span class="badge rounded-pill text-bg-dark">Accessibilità WCAG</span>
+              <span class="badge rounded-pill text-bg-dark">Design System</span>
+              <span class="badge rounded-pill text-bg-dark">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="border border-secondary-subtle rounded-4 p-4 h-100">
+
+            <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-4">
+              Frontend Development
+            </span>
+
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill text-bg-dark">HTML</span>
+              <span class="badge rounded-pill text-bg-dark">CSS</span>
+              <span class="badge rounded-pill text-bg-dark">JavaScript</span>
+              <span class="badge rounded-pill text-bg-dark">React.js</span>
+              <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
+              <span class="badge rounded-pill text-bg-dark">Responsive Design</span>
+              <span class="badge rounded-pill text-bg-dark">WordPress</span>
+              <span class="badge rounded-pill text-bg-dark">Git / GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="border border-secondary-subtle rounded-4 p-4 h-100">
+
+            <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-4">
+              Research & Strategy
+            </span>
+
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill text-bg-dark">Cognitive Walkthrough</span>
+              <span class="badge rounded-pill text-bg-dark">Card Sorting</span>
+              <span class="badge rounded-pill text-bg-dark">Personas</span>
+              <span class="badge rounded-pill text-bg-dark">User Flows</span>
+              <span class="badge rounded-pill text-bg-dark">Architettura dell'informazione</span>
+              <span class="badge rounded-pill text-bg-dark">Miro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="border border-secondary-subtle rounded-4 p-4 h-100">
+
+            <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-4">
+              Altro
+            </span>
+
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill text-bg-dark">Unity</span>
+              <span class="badge rounded-pill text-bg-dark">VR / AR</span>
+              <span class="badge rounded-pill text-bg-dark">C#</span>
+              <span class="badge rounded-pill text-bg-dark">Meta XR SDK</span>
+              <span class="badge rounded-pill text-bg-dark">Canva</span>
+              <span class="badge rounded-pill text-bg-dark">Notion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FORMAZIONE -->
+    <section class="container-xxl py-5 border-top border-secondary-subtle">
+
+      <div class="row mb-5">
+        <div class="col-12 col-lg-6">
+          <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-3">
+            Formazione
+          </span>
+
+          <h2 class="display-5 fw-bold mb-0">
+            Il mio percorso.
+          </h2>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column">
+
+        <div class="py-4 border-bottom border-secondary-subtle">
+          <div class="d-flex flex-column flex-md-row justify-content-between gap-2 mb-2">
+            <h3 class="h4 fw-bold mb-0">
+              Laurea magistrale in Teoria e Tecnologia della Comunicazione
+            </h3>
+
+            <span class="text-body-secondary">
+              2023 – 2026
+            </span>
+          </div>
+
+          <p class="text-body-secondary mb-0">
+            Università degli Studi di Milano-Bicocca · 110/110
+          </p>
+        </div>
+
+
+        <div class="py-4 border-bottom border-secondary-subtle">
+          <div class="d-flex flex-column flex-md-row justify-content-between gap-2 mb-2">
+            <h3 class="h4 fw-bold mb-0">
+              Laurea triennale in Informatica
+            </h3>
+
+            <span class="text-body-secondary">
+              2017 – 2023
+            </span>
+          </div>
+
+          <p class="text-body-secondary mb-0">
+            Università degli Studi di Milano-Bicocca
+          </p>
+        </div>
+
+
+        <div class="py-4 border-bottom border-secondary-subtle">
+          <div class="d-flex flex-column flex-md-row justify-content-between gap-2 mb-2">
+            <h3 class="h4 fw-bold mb-0">
+              Diploma in Informatica e Telecomunicazioni
+            </h3>
+
+            <span class="text-body-secondary">
+              2012 – 2017
+            </span>
+          </div>
+
+          <p class="text-body-secondary mb-0">
+            ISS "Francesco Viganò" · La Valletta Brianza (LC)
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ESPERIENZA -->
+    <section class="container-xxl py-5 border-top border-secondary-subtle">
+
+      <div class="row mb-5">
+        <div class="col-12 col-lg-6">
+          <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-3">
+            Esperienza
+          </span>
+
+          <h2 class="display-5 fw-bold mb-0">
+            Progetti e contesti reali.
+          </h2>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column">
+
+        <div class="py-4 border-bottom border-secondary-subtle">
+
+          <div class="d-flex flex-column flex-lg-row justify-content-between gap-2 mb-3">
+            <h3 class="h4 fw-bold mb-0">
+              Sviluppatore VR — Stage / Tesi
+            </h3>
+
+            <span class="text-body-secondary">
+              Set 2025 – Gen 2026
+            </span>
+          </div>
+
+          <p class="text-body-secondary mb-3">
+            MIBTEC, Università degli Studi di Milano-Bicocca
+          </p>
+
+          <p class="mb-0 fs-6 text-body-secondary">
+            Sviluppo di un'esperienza VR standalone per la ricerca psicologica sul cambiamento climatico.
+            Assemblaggio scene 3D in Unity, integrazione avatar con ReadyPlayerMe e Mixamo,
+            scripting C# per transizioni e sincronizzazione animazioni,
+            ottimizzazione build APK per Meta Quest 2 tramite Meta XR SDK.
+          </p>
+        </div>
+
+
+        <div class="py-4 border-bottom border-secondary-subtle">
+
+          <div class="d-flex flex-column flex-lg-row justify-content-between gap-2 mb-3">
+            <h3 class="h4 fw-bold mb-0">
+              Supporto informatico
+            </h3>
+
+            <span class="text-body-secondary">
+              Set 2019 – Ott 2022
+            </span>
+          </div>
+
+          <p class="text-body-secondary mb-3">
+            ASST di Lecco · Lecco – Merate (LC)
+          </p>
+
+          <p class="mb-0 fs-6 text-body-secondary">
+            Supporto tecnico al sistema informativo dipartimentale DIFRAWEB.
+            Gestione, elaborazione e analisi dati a supporto delle attività dipartimentali.
+            Risoluzione di problematiche hardware e software per il personale clinico.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CORSI -->
+    <section class="container-xxl py-5 border-top border-secondary-subtle">
+
+      <div class="row mb-5">
+        <div class="col-12 col-lg-7">
+
+          <span class="text-uppercase fw-bold text-primary small letter-spacing-2 d-block mb-3">
+            Magistrale
+          </span>
+
+          <h2 class="display-5 fw-bold mb-4">
+            Corsi e approfondimenti.
+          </h2>
+
+          <p class="text-body-secondary fs-5 mb-0">
+            Il corso di laurea magistrale in Teoria e Tecnologia della Comunicazione
+            mi ha permesso di lavorare su UX, progettazione interattiva,
+            tecnologie immersive, comunicazione digitale e ricerca.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="accordion accordion-flush" id="coursesAccordion">
+
+        <div class="accordion-item bg-transparent border-bottom border-secondary-subtle">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent px-0 py-4 fw-semibold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#courseOne">
+              User Experience Design
+            </button>
+          </h2>
+
+          <div id="courseOne"
+               class="accordion-collapse collapse"
+               data-bs-parent="#coursesAccordion">
+
+            <div class="accordion-body px-0 pt-0 pb-4">
+              <p class="text-body-secondary mb-4">
+                Ricerca utenti, architettura dell'informazione,
+                user flow, wireframe, prototipi e validazione.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill text-bg-dark">UX Research</span>
+                <span class="badge rounded-pill text-bg-dark">Figma</span>
+                <span class="badge rounded-pill text-bg-dark">User Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item bg-transparent border-bottom border-secondary-subtle">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent px-0 py-4 fw-semibold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#courseTwo">
+              Frontend Development
+            </button>
+          </h2>
+
+          <div id="courseTwo"
+               class="accordion-collapse collapse"
+               data-bs-parent="#coursesAccordion">
+
+            <div class="accordion-body px-0 pt-0 pb-4">
+              <p class="text-body-secondary mb-4">
+                Sviluppo interfacce responsive e accessibili con Bootstrap,
+                JavaScript e React.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill text-bg-dark">HTML</span>
+                <span class="badge rounded-pill text-bg-dark">CSS</span>
+                <span class="badge rounded-pill text-bg-dark">React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item bg-transparent border-bottom border-secondary-subtle">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-transparent px-0 py-4 fw-semibold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#courseThree">
+              Virtual Reality & Interactive Systems
+            </button>
+          </h2>
+
+          <div id="courseThree"
+               class="accordion-collapse collapse"
+               data-bs-parent="#coursesAccordion">
+
+            <div class="accordion-body px-0 pt-0 pb-4">
+              <p class="text-body-secondary mb-4">
+                Sviluppo di esperienze immersive e prototipi VR tramite Unity e Meta XR SDK.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill text-bg-dark">Unity</span>
+                <span class="badge rounded-pill text-bg-dark">VR / AR</span>
+                <span class="badge rounded-pill text-bg-dark">C#</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="container-xxl py-5 border-top border-secondary-subtle">
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
+
+      <p class="mb-0 text-body-secondary">
+        © 2026 Andrea Mazzilli
+      </p>
+
+      <div class="d-flex gap-4">
+        <a href="https://github.com/"
+           class="text-decoration-none text-body-secondary">
+          GitHub
+        </a>
+
+        <a href="https://linkedin.com/"
+           class="text-decoration-none text-body-secondary">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- MOBILE CV TOGGLE -->
+  <script>
+    function toggleLingua() {
+      const menu = document.getElementById('toggleCV');
+      menu.classList.toggle('d-none');
+    }
+  </script>
+
+</body>
+</html>
+<!-- ```
+
+---
+
+# CSS aggiuntivo consigliato
+
+Da aggiungere in fondo a `my-style.css` solo se alcune utility non esistono già:
+
+```css
+.py-lg-6 {
+  @media (min-width: 992px) {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+  }
+}
+
+.letter-spacing-2 {
+  letter-spacing: 0.12em;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  content: "+";
+  background-image: none;
+  font-size: 1.5rem;
+  transform: rotate(0deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "×";
+  transform: rotate(180deg);
+}
+```
+
+---
+
+# Note
+
+* Ho mantenuto la stessa struttura visuale della homepage:
+
+  * `container-xxl`
+  * spacing ampi
+  * label rosse uppercase
+  * tipografia Bootstrap
+  * border sottili
+  * layout responsive
+
+* Le card usano componenti Bootstrap nativi (`badge`, `rounded-4`, `border`, `accordion`).
+
+* L'accordion è già impostato per avere una sola voce aperta alla volta (`data-bs-parent`).
+
+* Se vuoi, nel prossimo step posso anche:
+
+  * rifinire il design usando ESATTAMENTE le classi custom già presenti nella home
+  * creare micro animazioni coerenti con la homepage
+  * aggiungere una timeline più elegante per esperienza/formazione
+  * creare una versione più “minimal studio portfolio”
+  * ottimizzare il markup per SEO/accessibilità
+  * creare anche la pagina progetti/work.
+ -->

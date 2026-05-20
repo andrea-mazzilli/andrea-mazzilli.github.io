@@ -33,6 +33,20 @@ $nav-link-hover-color: #ff0000;
 $navbar-light-active-color: #ff0000; // Per lo stato .show / .active
 @import "node_modules/bootstrap/scss/bootstrap";
 
+.hero-section {
+  /* 1. L'immagine di sfondo */
+  background-image: url('img/bgr.gif');
+  background-size: cover;        /* Copre l'intera area senza deformarsi */
+  background-position: center;   /* Centra l'immagine sia in verticale che in orizzontale */
+  background-repeat: no-repeat;  /* Evita che l'immagine si duplichi */
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  /* 3. Dimensioni della Hero */
+              /* Alta l'80% della schermata del browser (regolabile) */
+  width: 100%;
+  height: 60vh;
+}
+
 .offcanvas-fit {
   width: fit-content !important; 
   min-width: 200px; // Opzionale: evita che sia troppo stretto se c'è poco testo
