@@ -11983,7 +11983,7 @@ textarea.form-control-lg {
 }
 .hero-section {
   /* 1. L'immagine di sfondo */
-  background-image: url("img/bgr1.gif");
+  background-image: url("img/bgr.webp");
   background-size: cover; /* Copre l'intera area senza deformarsi */
   background-position: center; /* Centra l'immagine sia in verticale che in orizzontale */
   background-repeat: no-repeat; /* Evita che l'immagine si duplichi */
